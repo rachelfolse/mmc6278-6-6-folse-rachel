@@ -2,10 +2,6 @@ const express = require('express')
 const apiRoutes = require('./routes/api-routes')
 const htmlRoutes = require('./routes/html-routes')
 const app = express()
- 
-app.get('/', (req, res) => {
-  res.send('hello world');
-});
 // TODO: Require Exphbs
 const exphbs = require('express-handlebars')
 
