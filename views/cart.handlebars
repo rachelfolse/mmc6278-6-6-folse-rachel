@@ -22,7 +22,7 @@
             href="/product/{{inventoryId}}"
             class="cart-item-info">
     <!-- replace with product image -->
-            <img src="/images/{{images}}" alt={{name}} />
+            <img src="/images/{{image}}" alt={{name}} />
             <div>
     <!-- replace with product name and price -->
               <p>{{name}}</p>
@@ -35,7 +35,7 @@
                 Quantity
 <!-- replace with cart id, set max to inventoryQuantity, value to quantity -->
                 <input
-                  data-cart-id="{{cartId}}"
+                  data-cart-id="{{id}}"
                   type="number"
                   min="0"
                   max="{{inventoryQuantity}}"
@@ -44,7 +44,7 @@
               <!-- replace with cart id -->
               <button
                 class="remove-from-cart"
-                data-cart-id="{{cartId}}">
+                data-cart-id="{{id}}">
                 Remove
               </button>
             </div>
