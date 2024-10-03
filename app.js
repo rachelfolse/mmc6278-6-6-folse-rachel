@@ -1,7 +1,6 @@
 const express = require('express')
 const apiRoutes = require('./routes/api-routes')
 const htmlRoutes = require('./routes/html-routes')
-import express from 'express';
 const app = express()
  
 app.get('/', (req, res) => {
